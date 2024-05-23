@@ -1,0 +1,71 @@
+*{
+    padding:0;
+    margin:0;
+}
+.Home{
+    background-image:url(/media/Assignment\ 1\ Background\ pic.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100vw;
+    height:100vh;
+    z-index: -1;
+}
+.Hometitle{
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    top:5vh;
+    color:aliceblue;
+}
+nav{
+    position:absolute;
+    bottom:0;
+    background-color: rgba(255, 255, 255, 0.449);
+    width:40vw;
+    height:7vh;
+    border-radius: 30vw 30vw 0% 0%;
+    text-align: center;
+    left:30vw;
+}
+nav img{
+    width:2vw;
+    height:2vw;
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    height:100%;
+    width:100%;
+    justify-content: center;
+    opacity:1;
+    z-index:2;
+}
+nav li{
+    padding:0 2vw;
+}
+nav a{
+    text-decoration: none;
+    color:#000;
+}
+.Description{
+    position:absolute;
+    top:38vh;
+    left:5vw;
+    z-index:2;
+    color:white;
+    width:30vw;
+    height:40vh;
+}
+.Description h2{
+    text-align: center;
+}
+.VideoPlay{
+    background-color: rgba(255, 255, 255, 0.264);
+    width:40vw;
+    height:45vh;
+    position:absolute;
+    left:45vw;
+    top:30vh;
+    border-radius: 5vw 5vw 5vw 5vw;
+}
