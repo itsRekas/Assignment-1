@@ -43,10 +43,15 @@ nav ul{
 }
 nav li{
     padding:0 2vw;
+    font-size:calc(0.7vw + 0.7vh);
 }
 nav a{
     text-decoration: none;
     color:#000;
+    transition:ease 0.5s;
+}
+nav a:hover{
+    font-size:calc(0.8vw + 0.8vh);
 }
 .Description{
     position:absolute;
@@ -56,6 +61,7 @@ nav a{
     color:white;
     width:30vw;
     height:40vh;
+    font-size:calc(0.7vw + 0.7vh);
 }
 .Description h2{
     text-align: center;
