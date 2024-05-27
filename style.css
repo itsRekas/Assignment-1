@@ -1,496 +1,610 @@
-*{
-    padding:0;
-    margin:0;
-    font-size:calc(0.7vw + 0.7vh);
+/* General styling for all elements */
+* {
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    font-size: calc(0.7vw + 0.7vh); /* Responsive font size */
 }
-h1{
-    font-size:calc(1.2vw + 1.2vh);
+
+/* Styling for h1 elements */
+h1 {
+    font-size: calc(1.2vw + 1.2vh); /* Responsive font size for h1 */
 }
-.Home{
-    background-image:url(ABp.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    width:100vw;
-    height:100vh;
-    z-index: -1;
+
+/* Home section styling */
+.Home {
+    background-image: url(ABp.jpg); /* Background image for the home section */
+    background-size: cover; /* Cover the entire section */
+    background-repeat: no-repeat; /* No repeating of background image */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: -1; /* Send to back */
 }
-.Hometitle{
-    position:absolute;
-    width: 100%;
-    text-align: center;
-    top:5vh;
-    color:aliceblue;
+
+/* Home title styling */
+.Hometitle {
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    width: 100%; /* Full width */
+    text-align: center; /* Center align text */
+    top: 5vh; /* Position from top */
+    color: aliceblue; /* Text color */
 }
-nav{
-    position:fixed;
-    bottom:0;
-    background-color: rgba(255, 255, 255, 0.449);
-    width:40vw;
-    height:7vh;
-    border-radius: 30vw 30vw 0% 0%;
-    text-align: center;
-    left:30vw;
+
+/* Navigation bar styling */
+nav {
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Stick to bottom */
+    background-color: rgba(255, 255, 255, 0.449); /* Semi-transparent background */
+    width: 40vw; /* Set width */
+    height: 7vh; /* Set height */
+    border-radius: 30vw 30vw 0% 0%; /* Rounded top corners */
+    text-align: center; /* Center align text */
+    left: 30vw; /* Center horizontally */
 }
-nav img{
-    width:2vw;
-    height:2vw;
+
+/* Navigation bar image styling */
+nav img {
+    width: 2vw; /* Set width */
+    height: 2vw; /* Set height */
 }
-nav ul{
-    list-style: none;
-    display:flex;
-    align-items: center;
-    height:100%;
-    width:100%;
-    justify-content: center;
-    opacity:1;
-    z-index:2;
+
+/* Navigation list styling */
+nav ul {
+    list-style: none; /* Remove list style */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center align items */
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+    justify-content: center; /* Center justify items */
+    opacity: 1; /* Fully opaque */
+    z-index: 2; /* Bring forward */
 }
-nav li{
-    padding:0 2vw;
-    font-size:calc(0.7vw + 0.7vh);
-    color:#000;
+
+/* Navigation list item styling */
+nav li {
+    padding: 0 2vw; /* Horizontal padding */
+    font-size: calc(0.7vw + 0.7vh); /* Responsive font size */
+    color: #000; /* Text color */
 }
-nav a{
-    text-decoration: none;
-    color:#000;
-    transition:ease 0.5s;
+
+/* Navigation links styling */
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: #000; /* Text color */
+    transition: ease 0.5s; /* Smooth transition */
 }
-nav a:hover{
-    font-size:calc(0.8vw + 0.8vh);
+
+/* Navigation links hover effect */
+nav a:hover {
+    font-size: calc(0.8vw + 0.8vh); /* Increase font size on hover */
 }
-@keyframes lefttoright{
-    from{
-        translate:-50%;
-        opacity: 0;
+
+/* Keyframes for left to right animation */
+@keyframes lefttoright {
+    from {
+        translate: -50%; /* Start offscreen */
+        opacity: 0; /* Fully transparent */
     }
-    to{
-        translate:0;
-        opacity:1;
+    to {
+        translate: 0; /* Move to original position */
+        opacity: 1; /* Fully opaque */
     }
 }
-@keyframes fadeIn{
-    from{
-        opacity:0;
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Fully transparent */
     }
-    to{
-        opacity:1;
+    to {
+        opacity: 1; /* Fully opaque */
     }
 }
-.Description{
-    position:absolute;
-    top:38vh;
-    left:5vw;
-    z-index:2;
-    color:white;
-    width:35vw;
-    height:40vh;
-    animation-name: lefttoright;
-    animation-duration: 2s;
+
+/* Description section styling */
+.Description {
+    position: absolute; /* Absolute positioning */
+    top: 38vh; /* Position from top */
+    left: 5vw; /* Position from left */
+    z-index: 2; /* Bring forward */
+    color: white; /* Text color */
+    width: 35vw; /* Set width */
+    height: 40vh; /* Set height */
+    animation-name: lefttoright; /* Apply left to right animation */
+    animation-duration: 2s; /* Animation duration */
 }
-.Description h2{
-    font-size: calc(1vw + 1vh);
-    position:relative;
-    top:-10%;
+
+/* Description section h2 styling */
+.Description h2 {
+    font-size: calc(1vw + 1vh); /* Responsive font size */
+    position: relative; /* Relative positioning */
+    top: -10%; /* Position upwards */
 }
-.Description p{
-    font-size: calc(0.8vw + 0.8vh);
+
+/* Description section paragraph styling */
+.Description p {
+    font-size: calc(0.8vw + 0.8vh); /* Responsive font size */
 }
-.Description h2{
-    text-align: center;
+
+/* Description section h2 text alignment */
+.Description h2 {
+    text-align: center; /* Center align text */
 }
-.VideoPlay{
-    background-color: rgba(255, 255, 255, 0.264);
-    width:40vw;
-    height:45vh;
-    position:absolute;
-    left:45vw;
-    top:30vh;
-    border-radius: 5vw 5vw 5vw 5vw;
-    animation-name:fadeIn;
-    animation-duration: 3s;
+
+/* Video play section styling */
+.VideoPlay {
+    background-color: rgba(255, 255, 255, 0.264); /* Semi-transparent background */
+    width: 40vw; /* Set width */
+    height: 45vh; /* Set height */
+    position: absolute; /* Absolute positioning */
+    left: 45vw; /* Position from left */
+    top: 30vh; /* Position from top */
+    border-radius: 5vw 5vw 5vw 5vw; /* Rounded corners */
+    animation-name: fadeIn; /* Apply fade-in animation */
+    animation-duration: 3s; /* Animation duration */
 }
-.VideoPlay iframe{
-    width:100%;
-    height:100%;
-    border-radius: 5vw 5vw 5vw 5vw;
-    transition: ease 0.8s;
+
+/* Video play iframe styling */
+.VideoPlay iframe {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border-radius: 5vw 5vw 5vw 5vw; /* Rounded corners */
+    transition: ease 0.8s; /* Smooth transition */
 }
-.VideoPlay iframe:hover{
-    width:110%;
-    height:110%;
-    border-radius: 0vw 0vw 0vw 0vw;
+
+/* Video play iframe hover effect */
+.VideoPlay iframe:hover {
+    width: 110%; /* Increase width */
+    height: 110%; /* Increase height */
+    border-radius: 0vw 0vw 0vw 0vw; /* Remove rounded corners */
 }
-.All{
-    position:relative;
-    background-image:url(ABp.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    width:100vw;
-    min-height: 100vh;
-    overflow-x: hidden;
-    color:white;
+
+/* All section styling */
+.All {
+    position: relative; /* Relative positioning */
+    background-image: url(ABp.jpg); /* Background image */
+    background-size: cover; /* Cover the entire section */
+    background-repeat: no-repeat; /* No repeating of background image */
+    width: 100vw; /* Full viewport width */
+    min-height: 100vh; /* Minimum viewport height */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    color: white; /* Text color */
 }
-.All h1{
-    text-align: center;
-    width: 100%;
-    position:absolute;
-    top:3vh;
+
+/* All section h1 styling */
+.All h1 {
+    text-align: center; /* Center align text */
+    width: 100%; /* Full width */
+    position: absolute; /* Absolute positioning */
+    top: 3vh; /* Position from top */
 }
-.Allvideos-container{
-    position:absolute;
-    display:grid;
-    grid-template-columns: auto auto auto;
-    width: 100%;
-    top:13vh;
-    align-items: center;
-    padding:2vw;
+
+/* All videos container styling */
+.Allvideos-container {
+    position: absolute; /* Absolute positioning */
+    display: grid; /* Grid layout */
+    grid-template-columns: auto auto auto; /* Grid columns */
+    width: 100%; /* Full width */
+    top: 13vh; /* Position from top */
+    align-items: center; /* Center align items */
+    padding: 2vw; /* Padding */
 }
-.Allvideos-item{
-    padding:2vw;
-    width:100%;
-    height:40vh;
-    border-radius: 1vw 1vw 1vw 1vw;
+
+/* All videos item styling */
+.Allvideos-item {
+    padding: 2vw; /* Padding */
+    width: 100%; /* Full width */
+    height: 40vh; /* Set height */
+    border-radius: 1vw 1vw 1vw 1vw; /* Rounded corners */
 }
-.Allvideos-item iframe{
-    width:80%;
-    height:80%;
-    border-radius: 1vw 1vw 1vw 1vw;
-    transition: ease 1s;
+
+/* All videos item iframe styling */
+.Allvideos-item iframe {
+    width: 80%; /* Set width */
+    height: 80%; /* Set height */
+    border-radius: 1vw 1vw 1vw 1vw; /* Rounded corners */
+    transition: ease 1s; /* Smooth transition */
 }
-.Allvideos-item iframe:hover{
-    width:85%;
-    height:85%;
+
+/* All videos item iframe hover effect */
+.Allvideos-item iframe:hover {
+    width: 85%; /* Increase width */
+    height: 85%; /* Increase height */
 }
-::-webkit-scrollbar{
-    width:0.5vw;
-    border-radius: 0.5px;
+
+/* Webkit scrollbar styling */
+::-webkit-scrollbar {
+    width: 0.5vw; /* Scrollbar width */
+    border-radius: 0.5px; /* Rounded corners */
 }
-::-webkit-scrollbar-track{
-    background: rgba(15, 13, 31, 0.715);
+
+/* Webkit scrollbar track styling */
+::-webkit-scrollbar-track {
+    background: rgba(15, 13, 31, 0.715); /* Track background color */
 }
-::-webkit-scrollbar-thumb{
-    background:rgba(5, 5, 114, 0.76);
+
+/* Webkit scrollbar thumb styling */
+::-webkit-scrollbar-thumb {
+    background: rgba(5, 5, 114, 0.76); /* Thumb background color */
 }
-::-webkit-scrollbar-thumb:hover{
-    background: rgb(1, 1, 84);
+
+/* Webkit scrollbar thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(1, 1, 84); /* Hover background color */
 }
-.Info{
-    position:relative;
-    background-image:url(ABp.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    width:100vw;
-    min-height: 100vh;
-    overflow-x: hidden;
-    color:white;
+
+/* Info section styling */
+.Info {
+    position: relative; /* Relative positioning */
+    background-image: url(ABp.jpg); /* Background image */
+    background-size: cover; /* Cover the entire section */
+    background-repeat: no-repeat; /* No repeating of background image */
+    width: 100vw; /* Full viewport width */
+    min-height: 100vh; /* Minimum viewport height */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    color: white; /* Text color */
 }
-.Info nav{
-    background-color:rgba(255, 255, 255, 0.733);
+
+/* Info section navigation styling */
+.Info nav {
+    background-color: rgba(255, 255, 255, 0.733); /* Semi-transparent background */
 }
-.Info::before{
-    content:'';
-    background: rgba(0, 0, 0, 0.7);
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    position:fixed;
+
+/* Info section overlay styling */
+.Info::before {
+    content: ''; /* Empty content */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+    position: absolute; /* Absolute positioning */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    top: 0; /* Position from top */
+    left: 0; /* Position from left */
+    position: fixed; /* Fixed positioning */
 }
-.timeline{
-    color:white;
-    z-index: 0;
-    position:absolute;
-    top:10vh;
-    width:40vw;
-    left:30vw;
+
+/* Timeline styling */
+.timeline {
+    color: white; /* Text color */
+    z-index: 0; /* Send to back */
+    position: absolute; /* Absolute positioning */
+    top: 10vh; /* Position from top
+
+ */
+    width: 40vw; /* Set width */
+    left: 30vw; /* Position from left */
 }
-.checkpoint{
-    width:30vw;
-    position:relative;
-    left:5vw;
-    padding-top: 3vh;
+
+/* Checkpoint styling */
+.checkpoint {
+    width: 30vw; /* Set width */
+    position: relative; /* Relative positioning */
+    left: 5vw; /* Position from left */
+    padding-top: 3vh; /* Padding from top */
 }
-.checkpoint:nth-child(odd){
-    border-left: 1px solid white;
-    margin-left:37.5%;
+
+/* Odd checkpoint styling */
+.checkpoint:nth-child(odd) {
+    border-left: 1px solid white; /* Left border */
+    margin-left: 37.5%; /* Left margin */
 }
-.checkpoint:nth-child(even){
-    border-right: 1px solid white;
-    margin-left:-37.5%;
+
+/* Even checkpoint styling */
+.checkpoint:nth-child(even) {
+    border-right: 1px solid white; /* Right border */
+    margin-left: -37.5%; /* Negative left margin */
 }
-.checkpoint:nth-child(odd) div{
-    left:2vw;
+
+/* Odd checkpoint content styling */
+.checkpoint:nth-child(odd) div {
+    left: 2vw; /* Position from left */
 }
-.checkpoint:nth-child(even) div{
-    right:2vw;
+
+/* Even checkpoint content styling */
+.checkpoint:nth-child(even) div {
+    right: 2vw; /* Position from right */
 }
+
+/* Checkpoint before pseudo-element styling */
 .checkpoint:nth-child(odd)::before,
-.checkpoint:nth-child(even)::before{
-    content:'';
-    background:white;
-    width:2vw;
-    height:1px;
-    position:absolute;
-    top:50%;
+.checkpoint:nth-child(even)::before {
+    content: ''; /* Empty content */
+    background: white; /* Background color */
+    width: 2vw; /* Set width */
+    height: 1px; /* Set height */
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
 }
-.checkpoint:nth-child(even)::before{
-    right:0;
+
+/* Even checkpoint before pseudo-element positioning */
+.checkpoint:nth-child(even)::before {
+    right: 0; /* Position from right */
 }
-.checkpoint:nth-child(even){
-    border-right: 1px solid white;
-    margin-left:-37.5%;
-}
+
+/* Checkpoint content before pseudo-element styling */
 .checkpoint:nth-child(odd) div::before,
-.checkpoint:nth-child(even) div::before{
-    content:'';
-    background:rgba(255, 255, 255, 0.926);
-    width:1vw;
-    height:1vw;
-    border: solid rgba(7, 7, 102, 0.79);
-    border-radius: 50%;
-    position:absolute;
-    top:40.5%;
+.checkpoint:nth-child(even) div::before {
+    content: ''; /* Empty content */
+    background: rgba(255, 255, 255, 0.926); /* Semi-transparent background */
+    width: 1vw; /* Set width */
+    height: 1vw; /* Set height */
+    border: solid rgba(7, 7, 102, 0.79); /* Border styling */
+    border-radius: 50%; /* Circular shape */
+    position: absolute; /* Absolute positioning */
+    top: 40.5%; /* Center vertically */
 }
-.checkpoint:nth-child(odd) div::before{
-    left:-2.73vw;
+
+/* Odd checkpoint content before pseudo-element positioning */
+.checkpoint:nth-child(odd) div::before {
+    left: -2.73vw; /* Position from left */
 }
-.checkpoint:nth-child(even) div::before{
-    right:-2.73vw;
+
+/* Even checkpoint content before pseudo-element positioning */
+.checkpoint:nth-child(even) div::before {
+    right: -2.73vw; /* Position from right */
 }
-.checkpoint div{
-    border:1px solid white;
-    padding:1vw;
-    border-radius: 2vh;
-    position:relative;
+
+/* Checkpoint content styling */
+.checkpoint div {
+    border: 1px solid white; /* Border styling */
+    padding: 1vw; /* Padding */
+    border-radius: 2vh; /* Rounded corners */
+    position: relative; /* Relative positioning */
 }
-.contact{
-    cursor: pointer; 
+
+/* Contact styling */
+.contact {
+    cursor: pointer; /* Pointer cursor */
 }
+
+/* Contact hidden content styling */
 .contact div {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-    padding: 1vh;
-    line-height: 3vh;
-    width: 10vw;
-    height: 10vh;
-    background: rgba(255, 255, 255, 0.864);
-    position: absolute;
-    top: -10vh;
-    border-radius: 1vw;
+    opacity: 0; /* Fully transparent */
+    visibility: hidden; /* Hidden */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
+    padding: 1vh; /* Padding */
+    line-height: 3vh; /* Line height */
+    width: 10vw; /* Set width */
+    height: 10vh; /* Set height */
+    background: rgba(255, 255, 255, 0.864); /* Semi-transparent background */
+    position: absolute; /* Absolute positioning */
+    top: -10vh; /* Position from top */
+    border-radius: 1vw; /* Rounded corners */
 }
 
+/* Contact hover effect */
 .contact:hover div {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1; /* Fully opaque */
+    visibility: visible; /* Visible */
 }
-.contactpg{
-    width:100%;
-    min-height: 100vh;;
+
+/* Contact page styling */
+.contactpg {
+    width: 100%; /* Full width */
+    min-height: 100vh; /* Minimum height */
 }
-#contactleft{
-    position:relative;
-    width:30vw;
-    height:60vh;
-    transform: translate(18%);
-    top:20vh;
-    background: rgba(255, 255, 255, 0.247);
-    border-radius: 2vw 2vw 2vw 2vw;
-}  
-.contactInputs{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.447);
-    transition:ease 0.8s;
+
+/* Contact left section styling */
+#contactleft {
+    position: relative; /* Relative positioning */
+    width: 30vw; /* Set width */
+    height: 60vh; /* Set height */
+    transform: translate(18%); /* Translate position */
+    top: 20vh; /* Position from top */
+    background: rgba(255, 255, 255, 0.247); /* Semi-transparent background */
+    border-radius: 2vw 2vw 2vw 2vw; /* Rounded corners */
 }
-.contactInputs:hover{
-    background: rgba(255, 255, 255, 0.847);
+
+/* Contact input styling */
+.contactInputs {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center justify items */
+    background: rgba(255, 255, 255, 0.447); /* Semi-transparent background */
+    transition: ease 0.8s; /* Smooth transition */
 }
-.contactInputs::placeholder{
-    text-align: center;
-    color:black;
-    font-family: 'Franklin Gothic Medium';
+
+/* Contact input hover effect */
+.contactInputs:hover {
+    background: rgba(255, 255, 255, 0.847); /* More opaque background */
 }
+
+/* Contact input placeholder styling */
+.contactInputs::placeholder {
+    text-align: center; /* Center align text */
+    color: black; /* Text color */
+    font-family: 'Franklin Gothic Medium'; /* Font family */
+}
+
+/* First contact input styling */
 .contactInputs:nth-child(2) {
-    position: absolute;
-    border-radius: 2vw;
-    height: 10%;
-    width: 80%;
-    left: 10%;
-    top: 5%;
+    position: absolute; /* Absolute positioning */
+    border-radius: 2vw; /* Rounded corners */
+    height: 10%; /* Set height */
+    width: 80%; /* Set width */
+    left: 10%; /* Position from left */
+    top: 5%; /* Position from top */
 }
 
+/* Second contact input styling */
 .contactInputs:nth-child(3) {
-    position: absolute;
-    border-radius: 2vw;
-    height: 10%;
-    width: 80%;
-    left: 10%;
-    top: 20%;
+    position: absolute; /* Absolute positioning */
+    border-radius: 2vw; /* Rounded corners */
+    height: 10%; /* Set height */
+    width: 80%; /* Set width */
+    left: 10%; /* Position from left */
+    top: 20%; /* Position from top */
 }
 
+/* Third contact input styling */
 .contactInputs:nth-child(4) {
-    position: absolute;
-    border-radius: 2vw;
-    height: 50%;
-    width: 80%;
-    left: 10%;
-    top: 35%;
-    transition: ease 1s;
+    position: absolute; /* Absolute positioning */
+    border-radius: 2vw; /* Rounded corners */
+    height: 50%; /* Set height */
+    width: 80%; /* Set width */
+    left: 10%; /* Position from left */
+    top: 35%; /* Position from top */
+    transition: ease 1s; /* Smooth transition */
 }
-.contactInputs:nth-child(4):hover{
-    border-radius: 0;
+
+/* Third contact input hover effect */
+.contactInputs:nth-child(4):hover {
+    border-radius: 0; /* Remove rounded corners */
 }
-.submitbtn{
-    position: absolute;
-    border-radius: 2vw;
-    height: 10%;
-    width: 20%;
-    left: 40%;
-    top: 87%;
-    cursor:pointer;
-    transition: ease 0.7s;
-    background: rgba(255, 255, 255, 0.447);
+
+/* Submit button styling */
+.submitbtn {
+    position: absolute; /* Absolute positioning */
+    border-radius: 2vw; /* Rounded corners */
+    height: 10%; /* Set height */
+    width: 20%; /* Set width */
+    left: 40%; /* Center horizontally */
+    top: 87%; /* Position from top */
+    cursor: pointer; /* Pointer cursor */
+    transition: ease 0.7s; /* Smooth transition */
+    background: rgba(255, 255, 255, 0.447); /* Semi-transparent background */
 }
-.submitbtn:hover{
-    background-color: rgba(22, 143, 22, 0.873);
-    color:black;
+
+/* Submit button hover effect */
+.submitbtn:hover {
+    background-color: rgba(22, 143, 22, 0.873); /* Change background color */
+    color: black; /* Change text color */
 }
+
+/* Media queries for responsive design */
 @media only screen and (max-width: 1000px) {
-    .Description{
-        width: 80%;
-        left: 10%;
-        top:50vh;
+    .Description {
+        width: 80%; /* Set width */
+        left: 10%; /* Center horizontally */
+        top: 50vh; /* Position from top */
     }
-    .Description h2{
-        font-size: calc(2vw + 2vh);
-        top:-5%;
+    .Description h2 {
+        font-size: calc(2vw + 2vh); /* Increase font size */
+        top: -5%; /* Position upwards */
     }
-    .Description p{
-        font-size: calc(1.5vw + 1.5vh);
-        text-align: center;
+    .Description p {
+        font-size: calc(1.5vw + 1.5vh); /* Increase font size */
+        text-align: center; /* Center align text */
     }
-    .VideoPlay{
-        background-color: rgba(255, 255, 255, 0.264);
-        width:80%;
-        height:35vh;
-        position:absolute;
-        left:10%;
-        top:10vh;
+    .VideoPlay {
+        background-color: rgba(255, 255, 255, 0.264); /* Semi-transparent background */
+        width: 80%; /* Set width */
+        height: 35vh; /* Set height */
+        position: absolute; /* Absolute positioning */
+        left: 10%; /* Center horizontally */
+        top: 10vh; /* Position from top */
     }
-    .All{
-        position:relative;
-        background-image:url(ABp.jpg);
-        background-size:cover;
-        background-repeat:no-repeat;
-        width:100vw;
-        min-height: 100vh;
-        overflow-x: hidden;
-        color:white;
+    .All {
+        position: relative; /* Relative positioning */
+        background-image: url(ABp.jpg); /* Background image */
+        background-size: cover; /* Cover the entire section */
+        background-repeat: no-repeat; /* No repeating of background image */
+        width: 100vw; /* Full viewport width */
+        min-height: 100vh; /* Minimum viewport height */
+        overflow-x: hidden; /* Hide horizontal overflow */
+        color: white; /* Text color */
     }
-    .All h1{
-        text-align: center;
-        width: 100%;
-        position:absolute;
-        top:3vh;
+    .All h1 {
+        text-align: center; /* Center align text */
+        width: 100%; /* Full width */
+        position: absolute; /* Absolute positioning */
+        top: 3vh; /* Position from top */
     }
-    .Allvideos-container{
-        position:absolute;
-        display:grid;
-        grid-template-columns: auto;
-        width: 100%;
-        top:13vh;
-        align-items: center;
-        padding:2vw;
+    .Allvideos-container {
+        position: absolute; /* Absolute positioning */
+        display: grid; /* Grid layout */
+        grid-template-columns: auto; /* Single column */
+        width: 100%; /* Full width */
+        top: 13vh; /* Position from top */
+        align-items: center; /* Center align items */
+        padding: 2vw; /* Padding */
     }
-    .Allvideos-item{
-        padding:2vw;
-        width:100%;
-        height:40vh;
-        border-radius: 1vw 1vw 1vw 1vw;
+    .Allvideos-item {
+        padding: 2vw; /* Padding */
+        width: 100%; /* Full width */
+        height: 40vh; /* Set height */
+        border-radius: 1vw 1vw 1vw 1vw; /* Rounded corners */
     }
-    .Allvideos-item iframe{
-        position:relative;
-        left:7%;
-        width:80%;
-        height:80%;
-        border-radius: 6vw 6vw 6vw 6vw;
-        transition: ease 1s;
+    .Allvideos-item iframe {
+        position: relative
+
+; /* Relative positioning */
+        left: 7%; /* Position from left */
+        width: 80%; /* Set width */
+        height: 80%; /* Set height */
+        border-radius: 6vw 6vw 6vw 6vw; /* Rounded corners */
+        transition: ease 1s; /* Smooth transition */
     }
-    #contactleft{
-        position:relative;
-        width:80vw;
-        height:50vh;
-        transform: translate(7%);
-        top:20vh;
-        background: rgba(255, 255, 255, 0.247);
-        border-radius: 8vw 8vw 8vw 8vw;
-    }  
-    .submitbtn{
-        position: absolute;
-        height: 8%;
-        width: 20%;
-        left: 40%;
-        top: 87%;
-        cursor:pointer;
-        transition: ease 0.7s;
-        border-radius: 8vw 8vw 8vw 8vw;
-        background: rgba(255, 255, 255, 0.447);
+    #contactleft {
+        position: relative; /* Relative positioning */
+        width: 80vw; /* Set width */
+        height: 50vh; /* Set height */
+        transform: translate(7%); /* Translate position */
+        top: 20vh; /* Position from top */
+        background: rgba(255, 255, 255, 0.247); /* Semi-transparent background */
+        border-radius: 8vw 8vw 8vw 8vw; /* Rounded corners */
     }
-    .timeline{
-        top:15vh;
-        width:80vw;
-        left:5vw;
+    .submitbtn {
+        position: absolute; /* Absolute positioning */
+        height: 8%; /* Set height */
+        width: 20%; /* Set width */
+        left: 40%; /* Center horizontally */
+        top: 87%; /* Position from top */
+        cursor: pointer; /* Pointer cursor */
+        transition: ease 0.7s; /* Smooth transition */
+        border-radius: 8vw 8vw 8vw 8vw; /* Rounded corners */
+        background: rgba(255, 255, 255, 0.447); /* Semi-transparent background */
     }
-    .checkpoint{
-        width:100%;
+    .timeline {
+        top: 15vh; /* Position from top */
+        width: 80vw; /* Set width */
+        left: 5vw; /* Position from left */
+    }
+    .checkpoint {
+        width: 100%; /* Full width */
     }
     .checkpoint:nth-child(odd),
-    .checkpoint:nth-child(even){
-        border-left: 1px solid white;
-        margin-left:0;
+    .checkpoint:nth-child(even) {
+        border-left: 1px solid white; /* Left border */
+        margin-left: 0; /* No margin */
     }
     .checkpoint:nth-child(odd) div,
-    .checkpoint:nth-child(even) div{
-        left:2.5%;
+    .checkpoint:nth-child(even) div {
+        left: 2.5%; /* Position from left */
     }
     .checkpoint:nth-child(odd)::before,
-    .checkpoint:nth-child(even)::before{
-        content:'';
-        background:white;
-        width:2vw;
-        height:1px;
-        position:absolute;
-        top:50%;
+    .checkpoint:nth-child(even)::before {
+        content: ''; /* Empty content */
+        background: white; /* Background color */
+        width: 2vw; /* Set width */
+        height: 1px; /* Set height */
+        position: absolute; /* Absolute positioning */
+        top: 50%; /* Center vertically */
     }
-    .checkpoint:nth-child(even){
-        border-right: none;
+    .checkpoint:nth-child(even) {
+        border-right: none; /* No right border */
     }
     .checkpoint:nth-child(odd) div::before,
-    .checkpoint:nth-child(even) div::before{
-        content:'';
-        background:rgba(255, 255, 255, 0.926);
-        width:1vw;
-        height:1vw;
-        border: solid rgba(7, 7, 102, 0.79);
-        border-radius: 50%;
-        position:absolute;
-        top:32%;
-        left:-2.73vw;
+    .checkpoint:nth-child(even) div::before {
+        content: ''; /* Empty content */
+        background: rgba(255, 255, 255, 0.926); /* Semi-transparent background */
+        width: 1vw; /* Set width */
+        height: 1vw; /* Set height */
+        border: solid rgba(7, 7, 102, 0.79); /* Border styling */
+        border-radius: 50%; /* Circular shape */
+        position: absolute; /* Absolute positioning */
+        top: 32%; /* Position from top */
+        left: -2.73vw; /* Position from left */
     }
-    nav{
-        width:100vw;
-        left:0;
-        z-index:9;
-        background: rgba(255, 255, 255, 0.919);
+    nav {
+        width: 100vw; /* Full width */
+        left: 0; /* Position from left */
+        z-index: 9; /* Stack order */
+        background: rgba(255, 255, 255, 0.919); /* Semi-transparent background */
     }
-    nav a{
-        font-size:calc(1.5vw + 1.5vh);
+    nav a {
+        font-size: calc(1.5vw + 1.5vh); /* Increase font size */
     }
-    nav img{
-        width:5vw;
-        height:5vw;
+    nav img {
+        width: 5vw; /* Set width */
+        height: 5vw; /* Set height */
     }
 }
