@@ -2,7 +2,7 @@ const videos = [
     {
         url: "https://www.youtube.com/embed/9SijUid80tg?si=3Vxo5dqOGxL0oeve",
         title: "Struggle",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)"
+        description: "This shortclip highlights the basic petty annoying things that happen to us in life. It shows a boy that is having a bad day and how sometimes he tends to get pissed. He is to go to the office with some stuff and then check them in on the office laptop after which he is to sign in that he is done work and return the box back to the office he took it from. In doing this he tends to have petty problems like fixing the USB into the slot, putting the plug into the socket and even whn he was checking in he hit his toes aside the issue with the door"
     },
     {
         url: "https://www.youtube.com/embed/HUngLgGRJpo?si=QjtJL4kRQPV4Vepq",
@@ -23,36 +23,26 @@ const videos = [
 
 
 let currentIndex = 0;
-let mouseMoveTimer;
 const mouseMoveTimeout = 10000; // Time in milliseconds (10 seconds)
 
 function changeVideo() {
-    
-    const descriptionDiv = document.getElementById("description-div");
-    const videoplayDiv=document.getElementById("videodiv");
+    if (true){
+        const descriptionDiv = document.getElementById("description-div");
+        const videoplayDiv=document.getElementById("videodiv");
 
-    // Trigger reflow to restart animation
-    descriptionDiv.style.animation = 'none';
-    descriptionDiv.offsetHeight; // Trigger reflow
-    descriptionDiv.style.animation = '';
+        // Trigger reflow to restart animation
+        descriptionDiv.style.animation = 'none';
+        descriptionDiv.offsetHeight; // Trigger reflow
+        descriptionDiv.style.animation = '';
 
-    videoplayDiv.style.animation = 'none';
-    videoplayDiv.offsetHeight; // Trigger reflow
-    videoplayDiv.style.animation = '';
+        videoplayDiv.style.animation = 'none';
+        videoplayDiv.offsetHeight; // Trigger reflow
+        videoplayDiv.style.animation = '';
 
-    currentIndex = (currentIndex + 1) % videos.length;
-    document.getElementById("video-player").src = videos[currentIndex].url;
-    document.getElementById("video-title").innerText = videos[currentIndex].title;
-    document.getElementById("video-description").innerText = videos[currentIndex].description;
+        currentIndex = (currentIndex + 1) % videos.length;
+        document.getElementById("video-player").src = videos[currentIndex].url;
+        document.getElementById("video-title").innerText = videos[currentIndex].title;
+        document.getElementById("video-description").innerText = videos[currentIndex].description;
+    }
 }
 setInterval(changeVideo,10000);
-
-// function resetTimer() {
-//     clearTimeout(mouseMoveTimer);
-//     mouseMoveTimer = setTimeout(changeVideo, mouseMoveTimeout);
-// }
-
-// document.addEventListener('mousemove', resetTimer);
-
-// // Initialize the timer for the first time
-// resetTimer();
