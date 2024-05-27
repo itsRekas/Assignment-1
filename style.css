@@ -7,7 +7,7 @@ h1{
     font-size:calc(1.2vw + 1.2vh);
 }
 .Home{
-    background-image:url(/media/ABp.jpg);
+    background-image:url(/ABp.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     width:100vw;
