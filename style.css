@@ -58,15 +58,42 @@ nav a{
 nav a:hover{
     font-size:calc(0.8vw + 0.8vh);
 }
+@keyframes lefttoright{
+    from{
+        translate:-50%;
+        opacity: 0;
+    }
+    to{
+        translate:0;
+        opacity:1;
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
 .Description{
     position:absolute;
     top:38vh;
     left:5vw;
     z-index:2;
     color:white;
-    width:30vw;
+    width:35vw;
     height:40vh;
-    font-size:calc(0.7vw + 0.7vh);
+    animation-name: lefttoright;
+    animation-duration: 2s;
+}
+.Description h2{
+    font-size: calc(1vw + 1vh);
+    position:relative;
+    top:-10%;
+}
+.Description p{
+    font-size: calc(0.8vw + 0.8vh);
 }
 .Description h2{
     text-align: center;
@@ -79,6 +106,8 @@ nav a:hover{
     left:45vw;
     top:30vh;
     border-radius: 5vw 5vw 5vw 5vw;
+    animation-name:fadeIn;
+    animation-duration: 3s;
 }
 .VideoPlay iframe{
     width:100%;
@@ -126,6 +155,11 @@ nav a:hover{
     width:80%;
     height:80%;
     border-radius: 1vw 1vw 1vw 1vw;
+    transition: ease 1s;
+}
+.Allvideos-item iframe:hover{
+    width:85%;
+    height:85%;
 }
 ::-webkit-scrollbar{
     width:0.5vw;
@@ -161,7 +195,7 @@ nav a:hover{
     height:100%;
     top:0;
     left:0;
-    Position:fixed;
+    position:fixed;
 }
 .timeline{
     color:white;
@@ -250,4 +284,77 @@ nav a:hover{
 .contact:hover div {
     opacity: 1;
     visibility: visible;
+}
+.contactpg{
+    width:100%;
+    min-height: 100vh;;
+}
+#contactleft{
+    position:relative;
+    width:30vw;
+    height:60vh;
+    transform: translate(18%);
+    top:20vh;
+    background: rgba(255, 255, 255, 0.247);
+    border-radius: 2vw 2vw 2vw 2vw;
+}  
+.contactInputs{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.447);
+    transition:ease 0.8s;
+}
+.contactInputs:hover{
+    background: rgba(255, 255, 255, 0.847);
+}
+.contactInputs::placeholder{
+    text-align: center;
+    color:black;
+    font-family: 'Franklin Gothic Medium';
+}
+.contactInputs:nth-child(2) {
+    position: absolute;
+    border-radius: 2vw;
+    height: 10%;
+    width: 80%;
+    left: 10%;
+    top: 5%;
+}
+
+.contactInputs:nth-child(3) {
+    position: absolute;
+    border-radius: 2vw;
+    height: 10%;
+    width: 80%;
+    left: 10%;
+    top: 20%;
+}
+
+.contactInputs:nth-child(4) {
+    position: absolute;
+    border-radius: 2vw;
+    height: 50%;
+    width: 80%;
+    left: 10%;
+    top: 35%;
+    transition: ease 1s;
+}
+.contactInputs:nth-child(4):hover{
+    border-radius: 0;
+}
+.submitbtn{
+    position: absolute;
+    border-radius: 2vw;
+    height: 10%;
+    width: 20%;
+    left: 40%;
+    top: 87%;
+    cursor:pointer;
+    transition: ease 0.7s;
+    background: rgba(255, 255, 255, 0.447);
+}
+.submitbtn:hover{
+    background-color: rgba(22, 143, 22, 0.873);
+    color:black;
 }
